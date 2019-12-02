@@ -27,7 +27,7 @@ export default class Header extends Component {
                 </button>
 
                 <button>
-                    <Link to="/review]/new">Create Canna Review</Link>
+                    <Link to="/review/new">Create Canna Review</Link>
                 </button>
                 <div>
             </div>

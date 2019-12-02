@@ -40,7 +40,7 @@ export default class ProductData extends Component {
                     <h5>brand: {this.state.product.brand}</h5>
                     <h5>strain: {this.state.product.strain}</h5>
 
-                    <button onClick={this.deleteMovie}>Delete This Product</button>
+                    <button onClick={this.deleteProduct}>Delete This Product</button>
                     <button>
                     <Link to='/'>Main Menu</Link>
                     </button>

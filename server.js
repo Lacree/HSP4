@@ -18,7 +18,9 @@ app.use('/api/patient', patientRouter)
 
 app.get('/*', (req, res) => {
     res.sendFile(`${__dirname}/client/build/index.html`)
-})
+}ua 2vAo-\=]]   ;pp-0654328i9o0--p0oi
+
+-0}+{ vm')
 
 const PORT = process.env.PORT || 3001
 
