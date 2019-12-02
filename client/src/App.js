@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
-import Movies from './components/Movies';
-import Locations from './components/Locations';
+import Patients from './components/Patients';
+import Products from './components/Products';
 import Reviews from './components/Reviews';
 import Header from './components/Header';
-import CreateMovies from './components/CreateMovies';
-import CreateLocations from './components/CreateLocations';
+import CreatePatients from './components/CreatePatients';
+import CreateProducts from './components/CreateProducts';
 import CreateReviews from './components/CreateReviews';
-import MoviesInformation from "./components/MoviesInformation";
-import LocationsInformation from "./components/LocationsInformation";
-import ReviewsInformation from "./components/ReviewsInformation"
+import PatientData from "./components/PatientData";
+import ProductData from "./components/ProductData";
+import ReviewsData from "./components/ReviewsData"
 
 
 function App() {
@@ -21,16 +21,16 @@ function App() {
           <Route exact path="/">
             <Header />
           </Route>
-          <Route exact path="/movies/" component={Movies} />
-          <Route exact path="/movies/:id" component={MoviesInformation} />
-          <Route exact path="/locations/" component={Locations} />
-          <Route exact path="/locations/:id" component={LocationsInformation} />
+          <Route exact path="/patients/" component={Patients} />
+          <Route exact path="/patients/:id" component={PatientData} />
+          <Route exact path="/products/" component={Products} />
+          <Route exact path="/products/:id" component={ProductData} />
           <Route exact path="/reviews" component={Reviews} />
-          <Route exact path="/reviews/:id" component={ReviewsInformation} />
-          <Route exact path="/movie/new" component={CreateMovies} />
-          <Route exact path="/location/new" component={CreateLocations} />
+          <Route exact path="/reviews/:id" component={ReviewsData} />
+          <Route exact path="/patients/new" component={CreatePatients} />
+          <Route exact path="/products/new" component={CreateProducts} />
           <Route exact path="/review/new" component={CreateReviews} />
-        
+          
         </Switch>
       </Router>
     </div>

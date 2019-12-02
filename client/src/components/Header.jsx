@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import ReactPlayer from 'react-player'
-
-
 
 export default class Header extends Component {
     
@@ -10,32 +7,29 @@ export default class Header extends Component {
         return (
             <div>
                 <button>
-                    <Link to="/movies"> Movies</Link>
+                    <Link to="/products">Canna Essentails</Link>
                 </button>
                 
                 <button>
-                    <Link to="/locations"> Locations</Link>
+                    <Link to="/patients">Canna Patients</Link>
                 </button>
 
                 <button>
-                    <Link to="/reviews"> Reviews</Link>
+                    <Link to="/reviews">Canna Reviews</Link>
                 </button>
 
                 <button>
-                    <Link to="/movie/new"> Create New Movie</Link>
+                    <Link to="/patient/new">Create Canna Patient</Link>
                 </button>
 
                 <button>
-                    <Link to="/location/new"> Create New Location</Link>
+                    <Link to="/product/new">Create Canna Product</Link>
                 </button>
 
                 <button>
-                    <Link to="/review/new"> Create New Review</Link>
+                    <Link to="/review]/new">Create Canna Review</Link>
                 </button>
                 <div>
-            <ReactPlayer
-            url="https://www.youtube.com/watch?v=unzT4BSwN-s"
-         />
             </div>
             </div>
 

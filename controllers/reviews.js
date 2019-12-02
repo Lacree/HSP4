@@ -20,15 +20,6 @@ reviewRouter.get('/:id', (req, res) => {
         })
 })
 
-//updateReviews
-reviewRouter.put('/:id', (req, res) => {
-    ReviewApi.updateReviews(req.params.id, req.body)
-        .then((updatedReview) => {
-            res.json(updatedReview)
-        })
-
-})
-
 //createReview
 reviewRouter.post('/', (req, res) => {
     ReviewApi.createReviews(req.body)

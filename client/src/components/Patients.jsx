@@ -2,30 +2,31 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-
-export default class Reviews extends Component {
+export default class Patients extends Component {
     state = {
-        reviews: []
+        patients: []
     }
-    componentDidMount = () => {
-        axios.get('/api/review')
-            .then((response) => {
-                this.setState({ reviews: response.data })
-            })
 
+
+    componentDidMount = () => {
+        axios.get('/api/patient')
+            .then((response) => {
+                this.setState({ patients: response.data })
+            })
     }
+
+
     render() {
-        console.log(this.state.reviews)
+        console.log(this.state.patients)
         return (
             <div>
-                <h1>Canna Reviews & Articles</h1>
-                {this.state.reviews.map((review) => {
+                <h1>Canna Patients</h1>
+                {this.state.patients.map((patient) => {
                     return (
-                        <div key={review._id}>
-                            <Link to={'/reviews/' + review._id}><h2>{review.name}</h2></Link>
+                        <div key={patient._id}>
+                            <Link to={`/patients/${patient._id}`}><h5>{patient.name}</h5></Link>
                         </div>
                     )
-
                 })}
                 <Link to='/'>Main Menu</Link>
             </div>

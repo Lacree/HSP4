@@ -1,33 +1,29 @@
 const mongoose = require('./connections.js')
 
 const ReviewsSchema = new mongoose.Schema({
-    Name: String,
-    Article: String
+    author: String,
+    review: String,
+    publicationDate: Number 
 })
 
 const ReviewsCollection = mongoose.model('review', ReviewsSchema)
 
-//getAllReviews
+//getAll
 const getAllReviews = () => {
     return ReviewsCollection.find({})
 }
 
-//getoneReview
+//getone
 const getoneReview = (id) => {
     return ReviewsCollection.findById(id)
 }
 
-//createReviews
-const createReviews = (reviewData) => {
+//create
+const createReview = (reviewData) => {
     return ReviewsCollection.create(reviewData)
 }
 
-//updateReviews
-const updateReviews = (id, reviewData) => {
-    return ReviewsCollection.updateOne({ _id: id }, reviewData)
-}
-
-//deleteReviews
+//delete
 const deleteReview = (id) => {
     return ReviewsCollection.deleteOne({ _id: id })
 }
@@ -35,7 +31,6 @@ const deleteReview = (id) => {
 module.exports = {
     getAllReviews,
     getoneReview,
-    createReviews,
-    updateReviews,
+    createReview,
     deleteReview
 }

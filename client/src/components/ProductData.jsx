@@ -3,21 +3,21 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 
 
-export default class MoviesInformation extends Component {
+export default class ProductData extends Component {
     state = {
-        movie: []
+        product: []
     }
 
     componentDidMount = () => {
-        axios.get('/api/movie/' + this.props.match.params.id)
+        axios.get('/api/product/' + this.props.match.params.id)
             .then((response) => {
-                this.setState({ movie: response.data })
+                this.setState({ product: response.data })
                 console.log(this.state)
             })
     }
 
-    deleteMovie = () => {
-        axios.delete('/api/movie/' + this.props.match.params.id)
+    deleteProduct = () => {
+        axios.delete('/api/product/' + this.props.match.params.id)
             .then((response) => {
                 this.setState({ deleted: true })
                 console.log(response)
@@ -28,19 +28,21 @@ export default class MoviesInformation extends Component {
         if (this.state.hasOwnProperty('deleted') && this.state.deleted) {
             return (
                 <div>
-                    Movie has been deleted
+                    Product has been deleted
                 </div>
             )
         } else {
             return (
                 <div>
-                    <h1>Movie Information </h1>
-                    <h5>name: {this.state.movie.name}</h5>
-                    <h5>genre: {this.state.movie.genre}</h5>
-                    <h5>releaseYear: {this.state.movie.releaseYear}</h5>
-                    <button onClick={this.deleteMovie}>Deleted</button>
+                    <h1>Product Data </h1>
+                    <h5>name: {this.state.product.name}</h5>
+                    <h5>type: {this.state.product.type}</h5>
+                    <h5>brand: {this.state.product.brand}</h5>
+                    <h5>strain: {this.state.product.strain}</h5>
+
+                    <button onClick={this.deleteMovie}>Delete This Product</button>
                     <button>
-                    <Link to='/'>Back</Link>
+                    <Link to='/'>Main Menu</Link>
                     </button>
                     
                 </div>

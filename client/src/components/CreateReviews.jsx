@@ -7,8 +7,9 @@ export default class CreateReviews extends Component {
     state = {
         redirect: false,
         newReview: {
-            stars: "",
-            review: ""
+            author: "",
+            review: "",
+            publicationDate:""
         },
         createdReviewId: null
     }
@@ -42,10 +43,10 @@ export default class CreateReviews extends Component {
 
                     <div>
                         <input
-                            name='stars'
+                            name='author'
                             type='text'
-                            placeholder='Star rating'
-                            value={this.state.newReview.stars}
+                            placeholder='Author'
+                            value={this.state.newReview.author}
                             onChange={this.handelNewReview}
                         />
                     </div>
@@ -53,15 +54,24 @@ export default class CreateReviews extends Component {
                         <input
                             name='review'
                             type='text'
-                            placeholder='Review'
+                            placeholder='Review/Article'
                             value={this.state.newReview.review}
                             onChange={this.handelNewReview}
                         />
                     </div>
                     <div>
+                    <div>
+                        <input
+                            name='publicationDate'
+                            type='text'
+                            placeholder='Date Published'
+                            value={this.state.newReview.publicationDate}
+                            onChange={this.handelNewReview}
+                        />
+                    </div>
                         <input
                             type='submit'
-                            value='Create New Review'
+                            value='Create A Review'
                         />
                     </div>
                 </form>

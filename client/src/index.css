@@ -4,29 +4,9 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(https://images.fineartamerica.com/images-medium-large-5/2-old-film-strip-and-photos-background-michal-bednarek.jpg);
-  background-size: cover;
-  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-h1{
-color: teal;
-text-decoration: underline;
-}
-h2{
-color: rgb(215, 178, 45);
-}
-h5{
-color: rgb(214, 81, 81);
-}
-div{
-background-image: url(https://motionarray.imgix.net/preview-86762-6dicuHGhCw-high_0014.jpg);
-border-radius: 1000%;
-padding: 20px;
-}
-
