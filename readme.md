@@ -3,9 +3,9 @@ Purpose: As Hemp & Cannabis become more legal we need a place to connect and see
 Audience: people intrested in the Hemp World. 
 
 [Heroku]()
- {'\n'}
+
 [Trello](https://trello.com/b/XwyRAQDC/cannacabniet)
- {'\n'}
+ 
 [oneDrive]()
 
 # HSP4
