@@ -1,9 +1,8 @@
 const mongoose = require('./connections.js')
 
 const LocationsSchema = new mongoose.Schema({
-   street: String,
-   city: String
-   
+street: String,
+city: String
 })
 
 const LocationsCollection = mongoose.model('location', LocationsSchema)
