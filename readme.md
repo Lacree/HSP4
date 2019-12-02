@@ -8,4 +8,4 @@ Audience: people intrested in the Hemp World.
  
 [oneDrive]()
 
-HEAVENLYSMOKES CANNA-BLOG
+HEAVENLY SMOKES CANNA-BLOG
