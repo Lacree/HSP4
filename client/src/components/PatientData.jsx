@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from "axios"
 import { Link } from 'react-router-dom'
 
-export default class PatientData extends Component {
+export default class PatientsData extends Component {
 
     state = {
         patient: {}
@@ -23,7 +23,7 @@ export default class PatientData extends Component {
                 console.log(this.state)
             })
     }
-    
+
 
     render() {
         if (this.state.hasOwnProperty('deleted') && this.state.deleted) {
