@@ -1,10 +1,10 @@
-const express = require('express')
-const productRouter = express.Router()
+/*const express = require('express')
+const strainRouter = express.Router()
 const axios = require('axios');
 
 
 // get all 
-productRouter.get('/', (req, res) => {
+stainRouter.get('/', (req, res) => {
     //let apikey= process.env.APIKEY
     let config = {
         headers: {
@@ -14,16 +14,17 @@ productRouter.get('/', (req, res) => {
     }
     axios.get('https://strainraygorodskijv1.p.rapidapi.com/getAllStrains', config)
         .then((response) => {
-            productData = response.data.api.products
-            products = []
+            strainsData = response.data.api.stains
+            wstains = []
 
-            for (index = 0; index < productsData.length; index++) {
-                products.push(teamsData[index].name)
+            for (index = 0; index < strainsData.length; index++) {
+                wstrains.push(strainsData[index].name)
             }
-            res.json(products)
+            res.json(wstains)
         })
 }
 )
 module.exports = {
-    productRouter
+    strainRouter
 }
+*/

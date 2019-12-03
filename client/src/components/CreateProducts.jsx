@@ -77,8 +77,8 @@ export default class CreateProducts extends Component {
                     <div>
                     <select
                         name='strain'
-                        //type='text'
-                        //placeholder="What's the strain?"
+                        type='text'
+                        placeholder="What's the strain?"
                         value={this.state.newProduct.strain}
                         onChange={this.handleNewProduct}
                     />
