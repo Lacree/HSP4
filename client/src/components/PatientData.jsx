@@ -34,15 +34,15 @@ export default class PatientData extends Component {
         } else {
             return (
                 <div>
-                    <h1>Patient Data</h1>
-                    <h5>Name: {this.state.PatientData.name}</h5>
-                    <h5>Age: {this.state.PatientData.age}</h5>
-                    <h5>topStrain: {this.state.PatientData.topStrain}</h5>
-                    <h5>Why: {this.state.PatientData.why}</h5>
+                    <h1>Patients Details</h1>
+                    <h5>Name: {this.state.patient.name}</h5>
+                    <h5>Age: {this.state.patient.age}</h5>
+                    <h5>topStrain: {this.state.patient.topStrain}</h5>
+                    <h5>Why: {this.state.patient.why}</h5>
                     
                     <button onClick={this.deletePatient}> Delete This Patient </button>
                     <button>
-                    <Link to='/'>Main Menu</Link>
+                    <Link to='/'> Main Menu</Link>
                     </button>
                 </div>
             )

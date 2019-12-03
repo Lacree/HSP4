@@ -2,10 +2,8 @@ Purpose: As Hemp & Cannabis become more legal we need a place to connect and see
 
 Audience: people intrested in the Hemp World and want a oppertunity to engage and connect.
 
-[Heroku]()
-
 [Trello](https://trello.com/b/XwyRAQDC/cannacabniet)
 
 [oneDrive]()
 
-HEAVENLY SMOKES CANNA-BLOG
+                                            HEAVENLY SMOKES CANNA-BLOG

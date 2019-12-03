@@ -22,15 +22,17 @@ function App() {
             <Header />
           </Route>
           <Route exact path="/patients/" component={Patients} />
-          <Route exact path="/patients/:id" component={PatientData} />
-          <Route exact path="/products/" component={Products} />
-          <Route exact path="/products/:id" component={ProductData} />
-          <Route exact path="/reviews" component={Reviews} />
-          <Route exact path="/reviews/:id" component={ReviewsData} />
           <Route exact path="/patients/new" component={CreatePatients} />
+          <Route exact path="/patients/:id" component={PatientData} />
+
+          <Route exact path="/products/" component={Products} />
           <Route exact path="/products/new" component={CreateProducts} />
-          <Route exact path="/review/new" component={CreateReviews} />
-          
+          <Route exact path="/products/:id" component={ProductData} />
+
+          <Route exact path="/reviews" component={Reviews} />
+          <Route exact path="/reviews/new" component={CreateReviews} />
+          <Route exact path="/reviews/:id" component={ReviewsData} />
+
         </Switch>
       </Router>
     </div>

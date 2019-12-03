@@ -1,7 +1,6 @@
 body {
-  margin: auto;
-  padding: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  font-family: cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

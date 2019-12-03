@@ -28,6 +28,9 @@ export default class Patients extends Component {
                         </div>
                     )
                 })}
+                <footer><img src='https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2012/09/snoop_2_a_h.jpg' />
+
+                </footer>
                 <Link to='/'>Main Menu</Link>
             </div>
         )

@@ -37,11 +37,10 @@ export default class ReviewsData extends Component {
         } else {
             return (
                 <div>
-                    <h1>Review Data</h1>
-                    <h5>Author: {this.state.ReviewsData.author}</h5>
-                    <h5>review: {this.state.ReviewsData.review}</h5>
-                    <h5>publicationDate: {this.state.ReviewsData .publicationDate}</h5>
-
+                    <h1>Reviews Details </h1>
+                    <h5>Author: {this.state.review.author}</h5>
+                    <h5>review: {this.state.review.review}</h5>
+                    <h5>publicationDate: {this.state.review.publicationDate}</h5>
                     <button onClick={this.deleteReview}> Delete this Review </button>
                     <button>
                     <Link to='/'>Main Menu</Link>
@@ -50,4 +49,4 @@ export default class ReviewsData extends Component {
             )
         }
     }
-}lp
+}

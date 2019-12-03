@@ -2,32 +2,75 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: teal;
+  margin: 13%;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div {
+  margin: auto;
+  background: pink;
+  border-radius: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  text-decoration: none;
+  font-family: fantasy;
+  padding: 4px;
+  color: teal;
+
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: 14px;;
+  color:#e48e9c;
+}
+
+button {
+  background-image: url(https://media.istockphoto.com/photos/marijuana-leaves-isolated-on-white-background-picture-id805709994?k=6&m=805709994&s=612x612&w=0&h=BWpAo-FumiOehKXRXTPqGQeXqAUzke0iicQk5mYSTj4=);
+  background-size: 350px;
+  border: groove;
+  border-radius: 50px;
+  padding: 15px 25px 15px;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 20px;
+
+  
+}
+
+h1{
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 60px;
+  
+}
+footer{
+  bottom: 0;
+  width:100%;
+  border: none;
+  background-size: 300px 100px;
+}
+footer img{
+  display: flexbox;
+  justify-content: space-between;
+  width: 300px;
+  height: 200px;
+  border-radius: 40px;
+  border: ridge;
+}
+header{
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 40px;
+  display: flexbox;
+  justify-content: first baseline;
+  text-emphasis: none;
 }

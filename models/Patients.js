@@ -29,6 +29,7 @@ const deletePatient = (id) => {
     return PatientsCollection.deleteOne({ _id: id })
 }
 
+
 module.exports = {
     getAllPatients,
     getSinglePatient,

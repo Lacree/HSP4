@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
-    
+
     render() {
         return (
             <div>
                 <button>
                     <Link to="/products">Canna Essentails</Link>
                 </button>
-                
+
                 <button>
                     <Link to="/patients">Canna Patients</Link>
                 </button>
@@ -19,21 +19,21 @@ export default class Header extends Component {
                 </button>
 
                 <button>
-                    <Link to="/patient/new">Create Canna Patient</Link>
+                    <Link to="/patients/new">Create Canna Patient</Link>
                 </button>
 
                 <button>
-                    <Link to="/product/new">Create Canna Product</Link>
+                    <Link to="/products/new">Create Canna Product</Link>
                 </button>
 
                 <button>
-                    <Link to="/review/new">Create Canna Review</Link>
+                    <Link to="/reviews/new">Create Canna Review</Link>
                 </button>
                 <div>
-            </div>
+                </div>
             </div>
 
-            
+
         )
     }
 }

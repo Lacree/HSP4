@@ -8,12 +8,16 @@ export default class CreatePatients extends Component {
     state = {
         redirect: false,
         newPatient: {
-            name: "",
-            age: "",
-            topStrain: "",
-            why: ""
+            name: '',
+            age: '',
+            topStrain:'',
+            why:''
         },
         createdPatientId: null
+    }
+
+    componentDidMount() {
+        console.log('create patient page')
     }
     handelNewPatient = (event) => {
         const attributeName = event.target.name;
@@ -24,7 +28,7 @@ export default class CreatePatients extends Component {
     }
 
     addNewPatient = (event) => {
-        event.preventDefault();
+        event.preventDefault()
 
         axios.post('/api/patient', this.state.newPatient)
             .then(createdPatient => {
@@ -40,7 +44,7 @@ export default class CreatePatients extends Component {
             <div>
                 <form onSubmit={this.addNewPatient} >
 
-                    {this.state.redirect ? (<Redirect to={`/patients`} />) : null}
+                    {this.state.redirect ? (<Redirect to={'/patients'} />) : null}
 
                     <div>
                         <input

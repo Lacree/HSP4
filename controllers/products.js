@@ -12,6 +12,7 @@ productRouter.get('/', (req, res) => {
         })
 })
 
+
 //getOne
 productRouter.get('/:id', (req, res) => {
     ProductApi.getSingleProduct(req.params.id)
@@ -20,6 +21,7 @@ productRouter.get('/:id', (req, res) => {
         })
 })
 
+
 //create
 productRouter.post('/', (req, res) => {
     ProductApi.createProduct(req.body)
@@ -27,6 +29,7 @@ productRouter.post('/', (req, res) => {
             res.json(createdProduct)
         })
 })
+
 
 //delete
 productRouter.delete('/:id', (req, res) => {

@@ -3,7 +3,7 @@ const mongoose = require('./connections.js')
 const ReviewsSchema = new mongoose.Schema({
     author: String,
     review: String,
-    publicationDate: Number 
+    publicationDate: String
 })
 
 const ReviewsCollection = mongoose.model('review', ReviewsSchema)
@@ -27,6 +27,7 @@ const createReview = (reviewData) => {
 const deleteReview = (id) => {
     return ReviewsCollection.deleteOne({ _id: id })
 }
+
 
 module.exports = {
     getAllReviews,

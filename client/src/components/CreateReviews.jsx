@@ -9,11 +9,14 @@ export default class CreateReviews extends Component {
         newReview: {
             author: "",
             review: "",
-            publicationDate:""
+            publicationDate: ""
         },
         createdReviewId: null
     }
 
+    componentDidMount() {
+        console.log('create review page')
+    }
     handelNewReview = (event) => {
         const attributeName = event.target.name;
         const attributeValue = event.target.value;
@@ -60,15 +63,15 @@ export default class CreateReviews extends Component {
                         />
                     </div>
                     <div>
-                    <div>
-                        <input
-                            name='publicationDate'
-                            type='text'
-                            placeholder='Date Published'
-                            value={this.state.newReview.publicationDate}
-                            onChange={this.handelNewReview}
-                        />
-                    </div>
+                        <div>
+                            <input
+                                name='publicationDate'
+                                type='text'
+                                placeholder='Date Published'
+                                value={this.state.newReview.publicationDate}
+                                onChange={this.handelNewReview}
+                            />
+                        </div>
                         <input
                             type='submit'
                             value='Create A Review'

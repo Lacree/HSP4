@@ -1,10 +1,10 @@
 const mongoose = require('./connections.js')
 
 const ProductsSchema = new mongoose.Schema({
-name: String,
-type: String,
-brand: String,
-strain: String
+    name: String,
+    type: String,
+    brand: String,
+    strain: String
 })
 
 const ProductsCollection = mongoose.model('product', ProductsSchema)
@@ -25,7 +25,7 @@ const createProduct = (productData) => {
 }
 
 //update
-const updateProduct= (id, productData) => {
+const updateProduct = (id, productData) => {
     return ProductsCollection.updateOne({ _id: id }, productData)
 }
 

@@ -22,7 +22,7 @@ export default class Reviews extends Component {
                 {this.state.reviews.map((review) => {
                     return (
                         <div key={review._id}>
-                            <Link to={'/reviews/' + review._id}><h2>{review.name}</h2></Link>
+                            <Link to={`/reviews/${review._id}`}><h2>{review.author}</h2></Link>
                         </div>
                     )
 

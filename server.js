@@ -1,9 +1,11 @@
 const express = require('express')
 const app = express()
 
+
 const { productRouter } = require('./controllers/products.js')
-const { reviewRouter} = require('./controllers/reviews.js')
-const { patientRouter} = require('./controllers/patients.js')
+const { reviewRouter } = require('./controllers/reviews.js')
+const { patientRouter } = require('./controllers/patients.js')
+
 
 app.use(express.urlencoded({ extended: true }))
 
@@ -18,9 +20,7 @@ app.use('/api/patient', patientRouter)
 
 app.get('/*', (req, res) => {
     res.sendFile(`${__dirname}/client/build/index.html`)
-}ua 2vAo-\=]]   ;pp-0654328i9o0--p0oi
-
--0}+{ vm')
+})
 
 const PORT = process.env.PORT || 3001
 

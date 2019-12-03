@@ -22,7 +22,7 @@ reviewRouter.get('/:id', (req, res) => {
 
 //createReview
 reviewRouter.post('/', (req, res) => {
-    ReviewApi.createReviews(req.body)
+    ReviewApi.createReview(req.body)
         .then((createdReview) => {
             res.json(createdReview)
         })

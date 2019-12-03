@@ -12,6 +12,7 @@ patientRouter.get('/', (req, res) => {
         })
 })
 
+
 //getOne
 patientRouter.get('/:id', (req, res) => {
     PatientApi.getOnePatient(req.params.id)
@@ -20,6 +21,7 @@ patientRouter.get('/:id', (req, res) => {
         })
 })
 
+
 //create
 patientRouter.post('/', (req, res) => {
     PatientApi.createPatient(req.body)
@@ -27,6 +29,7 @@ patientRouter.post('/', (req, res) => {
             res.json(createdPatient)
         })
 })
+
 
 //delete
 patientRouter.delete('/:id', (req, res) => {

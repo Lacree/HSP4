@@ -14,6 +14,10 @@ export default class CreateProducts extends Component {
         },
         createdProductId: null
     }
+    componentDidMount(){
+        console.log('create product page')
+    }
+
     handleNewProduct = (event) => {
         const attributeName = event.target.name;
         const attributeValue = event.target.value;
