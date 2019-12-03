@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Header />
+          <Header />
           </Route>
           <Route exact path="/patients/" component={Patients} />
           <Route exact path="/patients/new" component={CreatePatients} />

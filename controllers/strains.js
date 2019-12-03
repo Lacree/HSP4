@@ -1,10 +1,11 @@
-/*const express = require('express')
+/*
+const express = require('express')
 const strainRouter = express.Router()
 const axios = require('axios');
 
 
 // get all 
-stainRouter.get('/', (req, res) => {
+strainRouter.get('/', (req, res) => {
     //let apikey= process.env.APIKEY
     let config = {
         headers: {

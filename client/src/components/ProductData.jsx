@@ -36,6 +36,7 @@ export default class ProductData extends Component {
             return (
                 <div>
                     <h1>Product Details </h1>
+                    <h5>name: {this.state.product.name}</h5>
                     <h5>type: {this.state.product.type}</h5>
                     <h5>brand: {this.state.product.brand}</h5>
                     <h5>strain: {this.state.product.strain}</h5>

@@ -5,15 +5,7 @@ import { Link } from 'react-router-dom'
 export default class PatientData extends Component {
 
     state = {
-        patient: []
-    }
-
-    componentDidMount = () => {
-        axios.get('/api/patient/' + this.props.match.params.id)
-            .then((response) => {
-                this.setState({ patient: response.data })
-                console.log(this.state)
-            })
+        patient: {}
     }
 
     deletePatient = () => {
@@ -23,6 +15,15 @@ export default class PatientData extends Component {
                 console.log(response)
             })
     }
+
+    componentDidMount = () => {
+        axios.get('/api/patient/' + this.props.match.params.id)
+            .then((response) => {
+                this.setState({ patient: response.data })
+                console.log(this.state)
+            })
+    }
+    
 
     render() {
         if (this.state.hasOwnProperty('deleted') && this.state.deleted) {
