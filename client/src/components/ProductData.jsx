@@ -4,16 +4,9 @@ import {Link} from 'react-router-dom'
 
 
 export default class ProductData extends Component {
-    state = {
-        product: []
-    }
 
-    componentDidMount = () => {
-        axios.get('/api/product/' + this.props.match.params.id)
-            .then((response) => {
-                this.setState({ product: response.data })
-                console.log(this.state)
-            })
+    state = {
+        product: {}
     }
 
     deleteProduct = () => {
@@ -21,6 +14,14 @@ export default class ProductData extends Component {
             .then((response) => {
                 this.setState({ deleted: true })
                 console.log(response)
+            })
+    }
+
+    componentDidMount = () => {
+        axios.get('/api/product/' + this.props.match.params.id)
+            .then((response) => {
+                this.setState({ product: response.data })
+                console.log(this.state)
             })
     }
 
@@ -35,16 +36,13 @@ export default class ProductData extends Component {
             return (
                 <div>
                     <h1>Product Details </h1>
-                    <h5>name: {this.state.product.name}</h5>
                     <h5>type: {this.state.product.type}</h5>
                     <h5>brand: {this.state.product.brand}</h5>
                     <h5>strain: {this.state.product.strain}</h5>
-
                     <button onClick={this.deleteProduct}>Delete This Product</button>
                     <button>
                     <Link to='/'>Main Menu</Link>
                     </button>
-                    
                 </div>
             )
         }

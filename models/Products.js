@@ -24,11 +24,6 @@ const createProduct = (productData) => {
     return ProductsCollection.create(productData)
 }
 
-//update
-const updateProduct = (id, productData) => {
-    return ProductsCollection.updateOne({ _id: id }, productData)
-}
-
 //delete
 const deleteProduct = (id) => {
     return ProductsCollection.deleteOne({ _id: id })
@@ -39,6 +34,5 @@ module.exports = {
     getAllProducts,
     getOneProduct,
     createProduct,
-    updateProduct,
     deleteProduct
 }

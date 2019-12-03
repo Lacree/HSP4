@@ -7,10 +7,10 @@ export default class CreateProducts extends Component {
     state = {
         redirect: false,
         newProduct: {
-            name: '',
-            type: '',
-            brand:'',
-            strain:''
+            name: "",
+            type: "",
+            brand: "",
+            strain: ""
         },
         createdProductId: null
     }
@@ -28,7 +28,7 @@ export default class CreateProducts extends Component {
 
 
     addNewProduct = (event) => {
-        event.preventDefault();
+        event.preventDefault()
 
         axios.post('/api/product', this.state.newProduct)
             .then(createdProduct => {
@@ -42,7 +42,7 @@ export default class CreateProducts extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.addNewProduct} >
+                <form onSubmit={this.addNewProduct}>
 
                     {this.state.redirect ? (<Redirect to={`/products`} />) : null}
 
@@ -59,7 +59,7 @@ export default class CreateProducts extends Component {
                         <input
                             name='type'
                             type='text'
-                            placeholder='Herb or Extract?'
+                            placeholder='What is it?'
                             value={this.state.newProduct.type}
                             onChange={this.handleNewProduct}
                         />
@@ -85,7 +85,7 @@ export default class CreateProducts extends Component {
                     </div>
                         <input
                             type="submit"
-                            value="Create New Products"
+                            value="Create A Products"
                         />
                     </div>
                 </form>

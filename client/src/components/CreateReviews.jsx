@@ -42,6 +42,7 @@ export default class CreateReviews extends Component {
         return (
             <div>
                 <form onSubmit={this.addNewReview}>
+                
                     {this.state.redirect ? (<Redirect to={'/reviews'} />) : null}
 
                     <div>
