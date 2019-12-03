@@ -16,7 +16,7 @@ const getAllProducts = () => {
 
 //getOne
 const getOneProduct = (id) => {
-    return ProductsCollection.findById(id)
+    return ProductsCollection.findById({ _id: id })
 }
 
 //create

@@ -15,7 +15,7 @@ productRouter.get('/', (req, res) => {
 
 //getOne
 productRouter.get('/:id', (req, res) => {
-    ProductApi.getSingleProduct(req.params.id)
+    ProductApi.getOneProduct(req.params.id)
         .then((singleProduct) => {
             res.json(singleProduct)
         })

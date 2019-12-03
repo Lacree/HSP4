@@ -15,7 +15,7 @@ const getAllPatients = () => {
 }
 
 //getOne
-const getonePatient = (id) => {
+const getOnePatient = (id) => {
     return PatientsCollection.findById(id)
 }
 
@@ -32,7 +32,7 @@ const deletePatient = (id) => {
 
 module.exports = {
     getAllPatients,
-    getonePatient,
+    getOnePatient,
     createPatient,
     deletePatient
 }
