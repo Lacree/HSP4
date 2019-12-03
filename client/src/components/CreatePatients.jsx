@@ -59,7 +59,7 @@ export default class CreatePatients extends Component {
                         <input
                             name='age'
                             type='text'
-                            placeholder='How old are you?'
+                            placeholder='whats your age?'
                             value={this.state.newPatient.age}
                             onChange={this.handelNewPatient}
 
