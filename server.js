@@ -5,7 +5,7 @@ const app = express()
 const { productRouter } = require('./controllers/products.js')
 const { reviewRouter } = require('./controllers/reviews.js')
 const { patientRouter } = require('./controllers/patients.js')
-//const { strainRouter } = require('./controllers/strains.js')
+
 
 
 
@@ -19,7 +19,7 @@ app.use(express.static(`${__dirname}/client/build`))
 app.use('/api/product', productRouter)
 app.use('/api/review', reviewRouter)
 app.use('/api/patient', patientRouter)
-//app.use('/api/strain',  strainRouter)
+
 
 app.get('/*', (req, res) => {
     res.sendFile(`${__dirname}/client/build/index.html`)
