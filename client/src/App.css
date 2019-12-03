@@ -19,8 +19,7 @@ h5 {
   font-family: fantasy;
   padding: 4px;
   color: teal;
-
-  font-size: 30px;
+  font-size: 20px;
 }
 
 a{
@@ -38,7 +37,7 @@ button {
   padding: 15px 25px 15px;
   display: inline-flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 40px;
   font-family: fantasy;
 }
 
@@ -46,7 +45,7 @@ h1{
   font-family: fantasy;
   font-style: italic;
   font-weight: 100;
-  font-size: 60px;
+  font-size: 40px;
   
 }
 footer{
